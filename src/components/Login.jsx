@@ -20,7 +20,6 @@ function Login() {
 
         const { email, password } = formData;
 
-        // check required fields
         if (email && password) {
             navigate("/profile");
         } else {
@@ -36,7 +35,6 @@ function Login() {
                     </h2>
                     <p className="font-medium text-gray-500 mb-8 text-start">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, iure aperiam dignissimos praesentium at non quo. Accusantium </p>
                     <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1 justify-start">
-                        {/* Full Name */}
                         <div className="relative">
                             <label
                                 htmlFor="email"
@@ -55,8 +53,6 @@ function Login() {
                                 className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:border-[#6C25FF] "
                             />
                         </div>
-
-                        {/* Phone */}
                         <div className="relative">
                             <label
                                 htmlFor="password"
