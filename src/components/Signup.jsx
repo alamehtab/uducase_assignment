@@ -24,7 +24,6 @@ function Signup() {
 
         const { fullname, phone, email, password, agency } = formData;
 
-        // check required fields
         if (fullname && phone && email && password && agency) {
             navigate("/login");
         } else {
@@ -37,9 +36,7 @@ function Signup() {
                 <h2 className="text-2xl font-bold text-[#1D283A] mb-8 text-center">
                     Create your PopX account
                 </h2>
-
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6 flex-1 justify-center">
-                    {/* Full Name */}
                     <div className="relative">
                         <label
                             htmlFor="fullname"
@@ -58,8 +55,6 @@ function Signup() {
                             className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:border-[#6C25FF] "
                         />
                     </div>
-
-                    {/* Phone */}
                     <div className="relative">
                         <label
                             htmlFor="phone"
@@ -78,8 +73,6 @@ function Signup() {
                             className="w-full border  rounded-lg px-4 py-3 focus:outline-none focus:border-[#6C25FF] "
                         />
                     </div>
-
-                    {/* Email */}
                     <div className="relative">
                         <label
                             htmlFor="email"
@@ -98,8 +91,6 @@ function Signup() {
                             className="w-full border  rounded-lg px-4 py-3 focus:outline-none focus:border-[#6C25FF] "
                         />
                     </div>
-
-                    {/* Password */}
                     <div className="relative">
                         <label
                             htmlFor="password"
@@ -118,8 +109,6 @@ function Signup() {
                             className="w-full border  rounded-lg px-4 py-3 focus:outline-none focus:border-[#6C25FF] "
                         />
                     </div>
-
-                    {/* Company */}
                     <div className="relative">
                         <label
                             htmlFor="company"
@@ -135,8 +124,6 @@ function Signup() {
                             className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:border-[#6C25FF] "
                         />
                     </div>
-
-                    {/* Agency (radio buttons) */}
                     <div>
                         <p className="text-sm text-black font-medium mb-2">
                             Are you an agency?<span className="text-red-500">*</span>
@@ -168,8 +155,6 @@ function Signup() {
                             </label>
                         </div>
                     </div>
-
-                    {/* Submit */}
                     <button
                         type="submit"
                         className="bg-[#6C25FF] text-white font-semibold py-3 rounded-lg w-full mt-4 hover:bg-[#5a1fd1] transition"
